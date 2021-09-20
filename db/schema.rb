@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_19_133840) do
+ActiveRecord::Schema.define(version: 2021_09_20_103305) do
 
   create_table "tasks", force: :cascade do |t|
-    t.string "name"
+    t.string "name", limit: 30, null: false
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
